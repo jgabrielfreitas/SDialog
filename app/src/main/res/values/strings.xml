@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">SDialogExample</string>
+    <string name="create_dialog">CREATE DIALOG</string>
+</resources>
