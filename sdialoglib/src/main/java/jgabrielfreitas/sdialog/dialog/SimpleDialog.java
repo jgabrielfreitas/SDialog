@@ -9,6 +9,7 @@ import jgabrielfreitas.sdialog.interfaces.DialogCallback;
 /**
  * Created by JGabrielFreitas on 14/11/15.
  */
+@Deprecated
 public class SimpleDialog {
 
     private String text;

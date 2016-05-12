@@ -8,6 +8,7 @@ import android.widget.Toast;
 
 import br.jgabrielfreitas.sdialog.R;
 import jgabrielfreitas.sdialog.DialogCreator;
+import jgabrielfreitas.sdialog.dialog.BasicDialog;
 import jgabrielfreitas.sdialog.interfaces.DialogCallback;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -26,25 +27,27 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
 
 
-        DialogCreator.newSimpleDialog(this).setTitle("Dialog Title")
-                                           .setMessage("Dialog message here.\nYou can write whatever you want here")
-                                           .setPositiveButtonText("YES")
-                                           .setNegativeButtonText("NO")
-                                           .setNeutralButtonText("NEUTRAL")
-                                           .setDialogCallback(new DialogCallback() {
+//        DialogCreator.newSimpleDialog(this).setTitle("Dialog Title")
+//                                           .setMessage("Dialog message here.\nYou can write whatever you want here")
+//                                           .setPositiveButtonText("YES")
+//                                           .setNegativeButtonText("NO")
+//                                           .setNeutralButtonText("NEUTRAL")
+//                                           .setDialogCallback(new DialogCallback() {
+//
+//                                               public void onPositiveButton() {
+//                                                   Toast.makeText(getApplicationContext(), "POSITIVE", Toast.LENGTH_LONG).show();
+//                                               }
+//
+//                                               public void onNegativeButton() {
+//                                                   Toast.makeText(getApplicationContext(), "NEGATIVE", Toast.LENGTH_LONG).show();
+//                                               }
+//
+//                                               public void onNeutralButton() {
+//                                                   Toast.makeText(getApplicationContext(), "NEUTRAL", Toast.LENGTH_LONG).show();
+//                                               }
+//                                           })
+//                                           .create();
 
-                                               public void onPositiveButton() {
-                                                   Toast.makeText(getApplicationContext(), "POSITIVE", Toast.LENGTH_LONG).show();
-                                               }
-
-                                               public void onNegativeButton() {
-                                                   Toast.makeText(getApplicationContext(), "NEGATIVE", Toast.LENGTH_LONG).show();
-                                               }
-
-                                               public void onNeutralButton() {
-                                                   Toast.makeText(getApplicationContext(), "NEUTRAL", Toast.LENGTH_LONG).show();
-                                               }
-                                           })
-                                           .create();
+        new BasicDialog(this).setTitle("Hello World").setContent(getString(R.string.lopem_ipsum)).show();
     }
 }
