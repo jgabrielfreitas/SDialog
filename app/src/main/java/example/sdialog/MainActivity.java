@@ -6,15 +6,18 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import br.jgabrielfreitas.sdialog.R;
-import jgabrielfreitas.sdialog.DialogCreator;
-import jgabrielfreitas.sdialog.dialog.BasicDialog;
-import jgabrielfreitas.sdialog.interfaces.DialogCallback;
+import com.jgabrielfreitas.callbacks.OnSingleChoiceListener;
+import com.jgabrielfreitas.dialog.SimpleAlertDialog;
+import com.jgabrielfreitas.dialog.SingleChoiceDialog;
+import com.jgabrielfreitas.dialog.SingleChoiceRadioDialog;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+import br.jgabrielfreitas.sdialog.R;
+
+public class MainActivity extends AppCompatActivity implements View.OnClickListener, OnSingleChoiceListener {
 
 
     Button createDialogButton;
+    String[] eeny;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +25,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         createDialogButton = (Button) findViewById(R.id.createDialogButton);
         createDialogButton.setOnClickListener(this);
+        eeny = getResources().getStringArray(R.array.eeny);
     }
 
     public void onClick(View v) {
@@ -48,6 +52,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 //                                           })
 //                                           .create();
 
-        new BasicDialog(this).setTitle("Hello World").setContent(getString(R.string.lopem_ipsum)).show();
+//        new BasicDialog(this).setTitle("Hello World").setContent(getString(R.string.lopem_ipsum)).show();
+//        new SimpleAlertDialog(this).setPositiveButton("CLOSE").setTitle("Hello World").setContent(getString(R.string.lopem_ipsum)).show();
+        new SingleChoiceRadioDialog(this).setItems(eeny).setChoiceButton("CHOOSE", this).setTitle("Hello World").setContent(getString(R.string.lopem_ipsum)).show();
+
+    }
+
+    public void onSingleChoiceSelected(int which) {
+        Toast.makeText(MainActivity.this, "Selected: " + eeny[which], Toast.LENGTH_SHORT).show();
     }
 }

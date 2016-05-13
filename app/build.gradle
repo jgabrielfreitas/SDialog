@@ -4,7 +4,7 @@ android {
     compileSdkVersion 23
     buildToolsVersion "23.0.1"
     defaultConfig {
-        applicationId 'br.jgabrielfreitas.sdialog.example'
+        applicationId 'br.com.sdialog.example'
         minSdkVersion 9
         targetSdkVersion 23
         versionCode 1

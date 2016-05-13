@@ -2,39 +2,11 @@
 <items version="2" >
 
     <item
-        jar="/Users/JGabrielFreitas/Documents/SDialogExample/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/libs/internal_impl-23.0.1.jar"
+        jar="/Users/stoneios/git/SDialog/app/build/intermediates/exploded-aar/SDialog/sdialoglib/unspecified/jars/classes.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
-        <dex dex="/Users/JGabrielFreitas/Documents/SDialogExample/app/build/intermediates/pre-dexed/debug/internal_impl-23.0.1-6bde4a9cac8e8381f7190b02cf1bc29b91b33d07.jar" />
-    </item>
-    <item
-        jar="/Users/JGabrielFreitas/Documents/SDialogExample/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
-        <dex dex="/Users/JGabrielFreitas/Documents/SDialogExample/app/build/intermediates/pre-dexed/debug/classes-f8808e81260ce7b7fd412dcbcc6f28fcbbabb9f8.jar" />
-    </item>
-    <item
-        jar="/Users/JGabrielFreitas/Documents/SDialogExample/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
-        <dex dex="/Users/JGabrielFreitas/Documents/SDialogExample/app/build/intermediates/pre-dexed/debug/classes-581bfcefec8d117c92e4f4c0e51573fe986f2c2c.jar" />
-    </item>
-    <item
-        jar="/Users/JGabrielFreitas/Documents/SDialogExample/app/build/intermediates/exploded-aar/SDialogExample/sdialoglib/unspecified/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="f38ff0229ee8ac8c413e27da281a4a713d3bbeac">
-        <dex dex="/Users/JGabrielFreitas/Documents/SDialogExample/app/build/intermediates/pre-dexed/debug/classes-c066b0df185be87bb955b80f3b5b2b577fdc478f.jar" />
-    </item>
-    <item
-        jar="/Users/JGabrielFreitas/Documents/Android/adt-bundle-mac-x86_64-20140321/sdk/extras/android/m2repository/com/android/support/support-annotations/23.0.1/support-annotations-23.0.1.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
-        <dex dex="/Users/JGabrielFreitas/Documents/SDialogExample/app/build/intermediates/pre-dexed/debug/support-annotations-23.0.1-9f4800332044d69ea12cf1361c28d345c824dcb9.jar" />
+        sha1="87e4f5f4a5ad22548476c64eb90e8d6375e4d51e">
+        <dex dex="/Users/stoneios/git/SDialog/app/build/intermediates/pre-dexed/debug/SDialog-sdialoglib-unspecified_dae5a7cd38fde54213abf1bcbadffb1f12993f32.jar" />
     </item>
 
 </items>
